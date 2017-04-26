@@ -28,7 +28,7 @@
 
 #import "KCKeyboardImagePickerView.h"
 
-CGFloat const kKCKeyboardImagePickerViewCellOptionButtonRadius = 60.0;
+CGFloat const kKCKeyboardImagePickerViewCellOptionButtonRadius = 70.0;
 CGFloat const kKCKeyboardImagePickerViewCellOptionButtonBorderWidth = 2.0;
 
 @interface KCKeyboardImagePickerView () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate>
@@ -146,6 +146,8 @@ CGFloat const kKCKeyboardImagePickerViewCellOptionButtonBorderWidth = 2.0;
             for (NSUInteger i = 0; i < [self.dataSource numberOfOptionButtonsInKeyboardImagePickerView:self]; i++) {
                 UIButton *currentOptionButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, kKCKeyboardImagePickerViewCellOptionButtonRadius, kKCKeyboardImagePickerViewCellOptionButtonRadius)];
                 currentOptionButton.tag = i;
+                currentOptionButton.titleLabel.adjustsFontSizeToFitWidth = YES;
+                currentOptionButton.titleLabel.minimumScaleFactor = 0.5;
                 currentOptionButton.layer.masksToBounds = YES;
                 currentOptionButton.layer.cornerRadius = kKCKeyboardImagePickerViewCellOptionButtonRadius / 2.0;
                 currentOptionButton.layer.borderWidth = kKCKeyboardImagePickerViewCellOptionButtonBorderWidth;

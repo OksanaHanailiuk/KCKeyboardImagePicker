@@ -1,0 +1,22 @@
+PODS:
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - KCKeyboardImagePicker (0.4.2)
+
+DEPENDENCIES:
+  - JSQMessagesViewController
+  - KCKeyboardImagePicker (from `../`)
+
+EXTERNAL SOURCES:
+  KCKeyboardImagePicker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  KCKeyboardImagePicker: 73e9a380e0db7bd7ee459a2c737c775300664f9d
+
+PODFILE CHECKSUM: e0264ca854c600ed9617daac51b7c1a616bf7cfb
+
+COCOAPODS: 1.2.0
